@@ -48,7 +48,7 @@ ssh-copy-id -i "$HOME"/.ssh/"$keyname".pub "$srvaddress"
 if [ $? -eq 0 ]; then
     echo ""
 else
-    echo "ERROR: We can't send public key to $srvaddress. Try it later by yourself."
+    echo "ERROR: I can't send public key to $srvaddress. Try it later by yourself."
     echo "Simply add the content of $HOME/.ssh/$keyname.pub to $HOME/.ssh/authorized_keys on your new server"
 fi
 
