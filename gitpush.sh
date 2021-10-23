@@ -1,7 +1,11 @@
 #!/bin/bash
 
 git status
-read -p "Comment: " message
+echo ""
+read -p "New commit comment: " message
+echo ""
 git add .
+echo ""
 git commit -m " $message "
+echo ""
 git status
