@@ -17,4 +17,6 @@ done
 [[ -n "$sshusername" ]] && userhost=$sshusername@$srvaddress || userhost=$srvaddress
 
 # Connect and execute
-ssh $userhost -t "sudo apt update && sudo apt -y upgrade && sudo apt dist-upgrade && sudo apt -y install mc tmux"
+ssh "$userhost" -t "sudo apt update && sudo apt -y upgrade && sudo apt dist-upgrade && sudo apt -y install mc tmux"
+
+echo "Done!"
