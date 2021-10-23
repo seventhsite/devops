@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# via https://gist.github.com/davejamesmiller/1965569
+
+# Create function
 ask() {
     local prompt default reply
 
@@ -36,4 +39,6 @@ ask() {
     done
 }
 
-ask "So what?" Y && echo "Hurray!" || echo "Not hurray!"
+# And now start asking
+
+ask "Yes or not" Y && echo "Hurray!" || echo "Not hurray!"

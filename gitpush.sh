@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Add all files, commit it and push
+
 git status
 echo ""
 read -p "New commit comment: " message
