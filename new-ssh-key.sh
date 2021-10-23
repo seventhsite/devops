@@ -8,7 +8,7 @@ while true; do
     case $yn in
         [Yy]* ) break;;
         [Nn]* ) echo "Please run me from user who will use the keys. Bye! "; exit;;
-        * ) echo "Please answer yes or no.";;
+        * ) break;;
     esac
 done
 

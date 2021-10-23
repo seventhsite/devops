@@ -9,7 +9,7 @@ while true; do
     case $yn in
         [Yy]* ) break;;
         [Nn]* ) read -p "Please, enter ssh username: " sshusername ; break;;
-        * ) echo "Please answer yes or no.";;
+        * ) break;;
     esac
 done
 
