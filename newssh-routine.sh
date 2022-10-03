@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # Get hostname
 read -p "Please, enter server address to connect: " srvaddress
 
