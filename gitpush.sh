@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # Add all files, commit it and push
 
