@@ -1,2 +1,2 @@
 # devops
-DevOPS tools
+DevOPS scripts
