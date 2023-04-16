@@ -71,7 +71,6 @@ else
 fi
 
 # Mount remote directory to local mount point
-#echo "sshfs -o "$OPTIONS" "$HETZNER_URL":"$HETZNER_REMOTE_DIR" "$MOUNT_POINT""
 sshfs -o "$OPTIONS" "$HETZNER_URL":"$HETZNER_REMOTE_DIR" "$MOUNT_POINT"
 echo ""
 echo "Box directory has been mounted!"
