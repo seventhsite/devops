@@ -11,7 +11,7 @@ The script is used for fast temporary and safe mounting/unmounting of the Hetzne
 The script checks for the presence of a directory to mount, the necessary packages and keys. It can also generate ssh keys and copy them to storage.
 Root access is not needed. For convenience, the directory is mounted with the permissions of the current user.
 
-Made with ChatGPT 3.5
+<sub>(Made with ChatGPT 3.5 help)</sub>
 
 ### gitpush.sh
 Add all files, ask for message, commit it and push to github.
@@ -21,3 +21,12 @@ Create ssh-keys, copy it to new server and create alias for ssh. It will __gener
 
 ### newssh-routine.sh
 apt update, upgrade and install some packages on new debian-based server.
+
+### telegram_send.sh
+Simple script to send telegram message and logging. Don't forget to change YOUR_BOT_TOKEN, YOUR_CHAT_ID and /PATH/TO/FILE.LOG.
+Also change the YOUR_TEXT or simply delete YOUR_TEXT from the script and use it like
+```
+./telegram_send.sh "Hello world!"
+```
+
+<sub>(Made with ChatGPT 3.5 help)</sub>
