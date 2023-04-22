@@ -19,6 +19,6 @@ done
 [[ -n "$sshusername" ]] && userhost=$sshusername@$srvaddress || userhost=$srvaddress
 
 # Connect and execute
-ssh "$userhost" -t "sudo apt update && sudo apt -y upgrade && sudo apt -y full-upgrade && sudo apt -y install mc tmux zabbix-agent2 gnupg2 curl"
+ssh "$userhost" -t "sudo apt update && sudo apt -y full-upgrade && sudo apt -y install mc tmux zabbix-agent2 gnupg2 curl"
 
 echo "Done!"
