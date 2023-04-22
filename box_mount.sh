@@ -62,9 +62,9 @@ if [ -e "$PRIVATE_KEY" ]; then
 else
   read -p "Can't find $PRIVATE_KEY private key. Do you want to create it? (y/n) " create_key
   if [ "$create_key" == "y" ]; then
-    ssh-keygen -f $PRIVATE_KEY
+    ssh-keygen -f "$PRIVATE_KEY"
     echo "Installing your key. Please enter your Hetzner box password for user $HETZNER_USER"
-    cat $PRIVATE_KEY.pub | ssh HETZNER_URL install-ssh-key
+    cat "$PRIVATE_KEY".pub | ssh HETZNER_URL install-ssh-key
   else
     echo "Continuing without private key. Please enter password for authentication."
   fi
@@ -74,7 +74,7 @@ fi
 sshfs -o "$OPTIONS" "$HETZNER_URL":"$HETZNER_REMOTE_DIR" "$MOUNT_POINT"
 echo ""
 echo "Box directory has been mounted!"
-df -h $MOUNT_POINT
+df -h "$MOUNT_POINT"
 echo ""
 #echo "Here is its content:"
 #cd $MOUNT_POINT
