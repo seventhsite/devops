@@ -22,6 +22,9 @@ Create ssh-keys, copy it to new server and create alias for ssh. It will __gener
 ### newssh-routine.sh
 apt update, upgrade and install some packages on new debian-based server.
 
+### rename-zabbix-hosts.sh
+SSH to remote server, do apt update and full-upgrade, modify the Hostname directive in /etc/zabbix/zabbix_agentd.conf and restart zabbix-agent service.
+
 ### telegram_send.sh
 Simple script to send telegram message and logging. Don't forget to change YOUR_BOT_TOKEN, YOUR_CHAT_ID and /PATH/TO/FILE.LOG.
 Also change the YOUR_TEXT or simply delete YOUR_TEXT from the script and use it like
