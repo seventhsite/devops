@@ -17,4 +17,4 @@ RESPONSE=$(curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage
     -d text="$TEXT")
 
 # Logging
-echo $RESPONSE | sed "s/^/$(date +"%Y-%m-%d %H:%M:%S") /" >> $LOG
+echo "$RESPONSE" | sed "s/^/$(date +"%Y-%m-%d %H:%M:%S") /" >> $LOG
