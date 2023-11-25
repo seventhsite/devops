@@ -13,6 +13,9 @@ Root access is not needed. For convenience, the directory is mounted with the pe
 
 <sub>(Made with ChatGPT 3.5 help)</sub>
 
+### domain-expiration-notice.sh
+This script monitors domain expiration dates from a specified file, sending Telegram notifications when any domain is within 30 days of expiry.
+
 ### gitpush.sh
 Add all files, ask for message, commit it and push to github.
 
