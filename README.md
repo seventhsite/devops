@@ -11,8 +11,6 @@ The script is used for fast temporary and safe mounting/unmounting of the Hetzne
 The script checks for the presence of a directory to mount, the necessary packages and keys. It can also generate ssh keys and copy them to storage.
 Root access is not needed. For convenience, the directory is mounted with the permissions of the current user.
 
-<sub>(Made with ChatGPT 3.5 help)</sub>
-
 ### domain-expiration-notice.sh
 This script monitors domain expiration dates from a specified file, sending Telegram notifications when any domain is within 30 days of expiry.
 
